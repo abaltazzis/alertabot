@@ -10,6 +10,10 @@ excludes = <CRON_SYNTAX_PERIOD>
 backup = <TG_USERNAME_OF_BACKUP>
 reports_into = <TG_USERNAME>
 ```
+The shifts.toml file will be parsing the shifts excel (NOC and On-Call Shift Schedule) that is on Google Docs (https://docs.google.com/spreadsheets/d/1tEIk3hQ2P5edrhste73WF8hTtNDfWOatpcCYuwUlPmE/edit#gid=124133391) 
+* Sheet DevOps which includes the on call devops will be used as the escalation path (no answer on alarm during shift) and will be allinged with the OC schedule.
+* Sheet NOC Monitoring will include the shifts (day and night) of all devops so that they get notified according to their shifts on telegram.
+
 * after sending to the on-call it will send a message to the support group
 * then it will send an email to the DevOps support  group
 * then it will send a telegram message the specific evn group (JV TG)
